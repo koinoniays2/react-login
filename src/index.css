@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {font-family: "Noto Sans KR", sans-serif;}
+input, textarea {outline: none; resize: none;}
+input::placeholder {
+    font-size: 0.75rem;
+}
+
+@layer components {
+    .container-css {
+        @apply w-full h-full max-w-[1320px] px-5 py-4
+    }
+}

@@ -20,6 +20,7 @@ export default function Postcode({setValue}) {
         fullAddress += extraAddress !== '' ? ` (${extraAddress})` : '';
         }
         // console.log(fullAddress);
+        // 주소 input에 넣기
         setValue("address", fullAddress);
     };
 

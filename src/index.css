@@ -5,11 +5,23 @@
 * {font-family: "Noto Sans KR", sans-serif;}
 input, textarea {outline: none; resize: none;}
 input::placeholder {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    color: #AAABA8;
+}
+
+#terms::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+#terms::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #81BECE; /* 스크롤바의 색상 */
+}
+#terms::-webkit-scrollbar-track {
+    background: #E8EDE7;  /*스크롤바 뒷 배경 색상*/
 }
 
 @layer components {
     .container-css {
-        @apply w-full h-full max-w-[1320px] px-5 py-4
+        @apply w-full h-auto max-w-[1320px] px-5 py-4
     }
 }
